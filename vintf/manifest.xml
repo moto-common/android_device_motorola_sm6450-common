@@ -1,28 +1,19 @@
 <manifest version="2.0" type="device" target-level="5">
-    <hal format="hidl" optional="true">
-        <name>vendor.trustonic.tee.tui</name>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.pal</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ITui</name>
+            <name>IPAL</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.trustonic.tee</name>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.AGMIPC</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>ITee</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.trustonic.teeregistry</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ITeeRegistry</name>
+            <name>IAGM</name>
             <instance>default</instance>
         </interface>
     </hal>

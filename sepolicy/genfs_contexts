@@ -18,5 +18,8 @@ genfscon sysfs /devices/platform/soc/soc:mmi,charger u:object_r:vendor_sysfs_bat
 genfscon sysfs /devices/platform/soc/soc:mmi_chrg_manager u:object_r:vendor_sysfs_battery_supply:s0
 genfscon sysfs /devices/platform/soc/soc:mmi,discrete-charging u:object_r:vendor_sysfs_battery_supply:s0
 
+# Touchpanel
+genfscon sysfs /devices/platform/soc/a8c000.spi/spi_master/spi0/spi0.1/touchscreen/primary u:object_r:vendor_sysfs_touchpanel:s0
+
 # Vibrator
 genfscon sysfs /devices/platform/soc/soc:ldo_vib u:object_r:sysfs_vibrator:s0

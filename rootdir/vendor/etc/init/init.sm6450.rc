@@ -1,0 +1,13 @@
+on early-boot
+    #sync power supply with healthd
+    wait /sys/class/power_supply/battery
+    wait /sys/class/power_supply/usb
+    write /sys/devices/platform/soc/soc:mmi,charger/state_sync 1
+    wait /sys/class/udc/${ro.boot.usbcontroller} 20
+
+on fs
+    insmod /vendor/lib/modules/mmi_charger.ko
+
+on init
+    wait_for_prop vendor.all.modules.ready 1
+

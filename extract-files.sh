@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=sm4350-common
+DEVICE=sm6450-common
 VENDOR=motorola
 
 # Load extract utilities and do some sanity checks.
@@ -66,7 +66,7 @@ fi
 function blob_fixup() {
     case "${1}" in
 
-      system_ext/etc/permissions/moto-telephony.xml)
+        system_ext/etc/permissions/moto-ims-ext.xml|system_ext/etc/permissions/moto-telephony.xml)
            sed -i "s#/system/#/system_ext/#" "${2}"
            ;;
     esac
