@@ -64,7 +64,7 @@ PRODUCT_PACKAGES += \
     android.hardware.common-V2-ndk_platform.vendor \
     android.hardware.graphics.common-V1-ndk_platform.vendor \
     android.hardware.graphics.composer@2.4.vendor \
-    libdrm.vendor \
+    vendor.qti.hardware.display.config-V2-ndk.vendor \
     vendor.qti.hardware.display.config-V5-ndk_platform.vendor \
     vendor.qti.hardware.display.allocator@1.0.vendor \
     vendor.qti.hardware.display.allocator@4.0.vendor \
@@ -77,7 +77,7 @@ PRODUCT_PACKAGES += \
 TARGET_USES_DYNAMIC_PARTITIONS := true
 
 # Components
-TARGET_UNWANTED_QTI_COMPONENTS := qseecomd
+TARGET_UNWANTED_QTI_COMPONENTS := qseecomd dsprpcd
 
 # Gatekeeper
 PRODUCT_PROPERTY_OVERRIDES += \
