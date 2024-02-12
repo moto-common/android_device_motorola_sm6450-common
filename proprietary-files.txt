@@ -302,6 +302,7 @@ vendor/lib64/libasn1cper.so
 vendor/lib64/libasn1crt.so
 vendor/lib64/libasn1crtx.so
 vendor/lib64/libcacertclient.so
+vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
 vendor/lib64/libgarden.so
@@ -333,10 +334,16 @@ vendor/lib64/libxtwifi_server_protocol.so
 vendor/lib64/libxtwifi_server_protocol_uri_v3.so
 vendor/lib64/vendor.qti.gnss-V1-ndk_platform.so
 vendor/lib64/vendor.qti.gnss-service.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
 # MDSP
 vendor/lib/libmdsprpc.so
 vendor/lib64/libmdsprpc.so
+
+# modemManager
+vendor/bin/modemManager
+vendor/etc/init/modemManager.rc
+vendor/etc/seccomp_policy/modemManager.policy
 
 # QESDK
 vendor/bin/qesdk-manager
@@ -821,6 +828,7 @@ vendor/bin/sscrpcd
 vendor/bin/sensors.qti
 vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/vendor.sensors.qti.rc
+vendor/etc/init/vendor.sensors.sscrpcd.rc
 vendor/lib/libsdsprpc.so
 vendor/lib/libsensorcal.so
 vendor/lib/libsensorslog.so
