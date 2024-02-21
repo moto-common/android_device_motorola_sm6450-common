@@ -56,6 +56,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # AVB
 TARGET_HAS_RECOVERY_AVB := true
 
+# Boot
+TARGET_USES_DTB_FROM_SOURCE := false
+
 # Device characteristics
 DEVICE_CHARACTERISTICS += ufs erofs
 
